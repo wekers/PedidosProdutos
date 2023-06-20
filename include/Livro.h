@@ -21,9 +21,11 @@ class Livro: public Produto {
     public:
         Livro();
         virtual ~Livro();
-        Livro(const string &);
+        Livro(int codigo, const string& descricao, float valor, const string &);
         void setIsbn(const string &is);
         string getIsbn() const;
+
+    protected:
 
     private:
         string isbn;
