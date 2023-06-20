@@ -3,26 +3,32 @@
 #include <string>
 using std::string;
 #include "Produto.h"
+#include "Livro.h"
 
-
-class ItemPedido : public Produto
+class ItemPedido
 {
 
-    
+
     public:
+
         ItemPedido();
         virtual ~ItemPedido();
 
-        ItemPedido(int quantidade, int codigo, const string& descricao, float valor);
+        ItemPedido(int quantidade, Produto *produto);
+
         void setQuantidade(int qnt);
         int getQuantidade() const;
-        Produto *prod;
-        void Imprimir();
+        int getProdutoCod() const;
+        string getProdutoDescricao() const;
+
 
     protected:
 
     private:
         int quantidade;
+        Produto *produto;
+
+
 };
 
 #endif // ITEMPEDIDO_H

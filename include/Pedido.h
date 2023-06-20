@@ -1,27 +1,27 @@
 #ifndef PEDIDO_H
 #define PEDIDO_H
-
+#include <vector>
 #include <string>
 #include "ItemPedido.h"
 
-using std::string;
 
+using namespace std;
 
 class Pedido
 {
-    ItemPedido *itemped;
+    //ItemPedido *itemped;
 
     public:
         Pedido();
         virtual ~Pedido();
 
-        void adicionarItem(ItemPedido *itemped);
+        void adicionarItem(ItemPedido *itemPed);
         float valorTotal();
 
     protected:
 
     private:
-
+        vector<ItemPedido*> vecItemPed;
 };
 
 #endif // PEDIDO_H
