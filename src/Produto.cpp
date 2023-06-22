@@ -3,7 +3,7 @@
 using namespace std;
 
 
-/* Construtor padrão */
+/* Construtor padrï¿½o */
 Produto::Produto(){
 }
 

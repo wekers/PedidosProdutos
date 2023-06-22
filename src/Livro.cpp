@@ -5,6 +5,7 @@ using namespace std;
 Livro::Livro(){
 }
 
+/* Herança */
 Livro::Livro(int cod, const string& des, float val, const string& is): Produto(cod, des, val) {
     this->isbn = is;
 }
@@ -15,9 +16,6 @@ void Livro::setIsbn(const string &is) {
 
 string Livro::getIsbn() const {
         return isbn;
-}
-
-CD::CD(){
 }
 
 Livro::~Livro(){
