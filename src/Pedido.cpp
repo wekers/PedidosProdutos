@@ -50,7 +50,7 @@ void Pedido::adicionarItem(){
                 
     }
     maisProdutos: //label de salto
-    cout << endl << "Digite 0 (para ver a lista de produtos disponiveis)\nou o codigo do produto que deseja adicionar:";
+    cout << endl << "Digite 2 (para ver a lista de produtos disponiveis)\nou o codigo do produto que deseja adicionar:";
     cin >> codigo;
     
     Produto* produtoEncontrado = nullptr;
@@ -76,29 +76,32 @@ void Pedido::adicionarItem(){
             while (opcao == 1){
                 goto maisProdutos; //salta para maisProdutos    
             }
-                break;
+                exit;
                
             } else if( resposta == "n") {
                 cout << endl;
                 break;
             }
         }
-        else if (codigo == 0){
-            cout << endl;
+        else if (codigo == 2){
+           cout << endl;
             cout << "Produtos disponiveis:" << endl;
             for (auto& listaprodutos : produtos) {
                 cout << "Codigo: " << listaprodutos->getCodigo() << " | " << listaprodutos->getDescricao() << " | " << listaprodutos->getValor() << endl;
             }
-            adicionarItem();
+            goto maisProdutos;
+            
         }
     
      }
      if (produtoEncontrado == nullptr) {
                 cout << endl << "*** Produto nao encontrado. ***" << std::endl;
-                adicionarItem();
+                goto maisProdutos; //salta para maisProdutos 
+                
      }
         
 }
+
 
 void Pedido::listarPedido(){
     cout << fixed << setprecision(2);

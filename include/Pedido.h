@@ -21,6 +21,7 @@ class Pedido
         void deletarPedido();
         float valorTotal();
         
+        
 
     protected:
 
