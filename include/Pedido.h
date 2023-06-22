@@ -3,25 +3,30 @@
 #include <vector>
 #include <string>
 #include "ItemPedido.h"
-
+using std::string;
 
 using namespace std;
 
 class Pedido
 {
-    //ItemPedido *itemped;
-
+    
     public:
         Pedido();
         virtual ~Pedido();
 
-        void adicionarItem(ItemPedido *itemPed);
+        void adicionarItem();
+        void adicionarProdutos();
+        void alterarPedido();
+        void listarPedido();
+        void deletarPedido();
         float valorTotal();
+        
 
     protected:
 
     private:
-        vector<ItemPedido*> vecItemPed;
+        
+        
 };
 
 #endif // PEDIDO_H

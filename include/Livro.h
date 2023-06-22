@@ -4,18 +4,7 @@
 #include "Produto.h"
 using std::string;
 
-/*
-class Livro
-{
-    public:
-        Livro();
-        virtual ~Livro();
-
-    protected:
-
-    private:
-};*/
-/* Herança */
+/* HeranÃ§a */
 class Livro: public Produto {
 
     public:
@@ -29,12 +18,6 @@ class Livro: public Produto {
 
     private:
         string isbn;
-};
-
-class CD: public Produto {
-
-    public:
-        CD();
 };
 
 

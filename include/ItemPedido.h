@@ -8,7 +8,6 @@ using std::string;
 class ItemPedido
 {
 
-
     public:
 
         ItemPedido();
@@ -19,9 +18,8 @@ class ItemPedido
         void setQuantidade(int qnt);
         int getQuantidade() const;
         int getProdutoCod() const;
-        string getProdutoDescricao() const;
-
-
+        string getProdutoDes() const;
+        float getProdutoVal() const;
     protected:
 
     private:
