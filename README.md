@@ -35,8 +35,9 @@ Implemente em C++.
 
 ## Compilar e executar
 
-###### Linux:
+#### Linux:
 
+##### No terminal <br>
 Compilar:
 `g++ main.cpp src/* -g -o main -Iinclude/ `
 
