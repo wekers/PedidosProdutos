@@ -15,8 +15,7 @@ Trata-se de um sistema Pedidos e Produtos.
 ![](https://raw.githubusercontent.com/wekers/PedidosProdutos/main/diagrama_classe.jpg)
 
 ### Objetivo
-Conforme diagrama de classe,
-Criar um programa com Menu e sua manipulação dos objetos;
+Conforme diagrama de classe, criar um programa com Menu e sua manipulação dos objetos; <br>
 Implemente em C++.
 
 
